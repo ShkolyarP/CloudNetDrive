@@ -3,7 +3,50 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.paltvad.cloudNetDrive</groupId>
   <artifactId>cloudNetDrive</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>cloudServer</module>
+    <module>cloudCommon</module>
+  </modules>
   <name>Archetype - cloudNetDrive</name>
   <url>http://maven.apache.org</url>
+
+  <dependencies>
+
+  <dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty-all</artifactId>
+    <version>4.1.84.Final</version>
+  </dependency>
+
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>2.0.3</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>provided</scope>
+    </dependency>
+
+
+
+
+
+  </dependencies>
+
+<properties>
+
+<maven.compiler.source>17</maven.compiler.source>
+<maven.compiler.target>17</maven.compiler.target>
+
+</properties>
+
+
 </project>
